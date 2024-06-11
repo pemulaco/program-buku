@@ -1,0 +1,104 @@
+body {
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 2rem;
+    color: #311414;
+}
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 2rem;
+    padding-block: 2rem;
+}
+#title {
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+#author {
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+#year {
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(0, 249, 0, 0.945);
+    color: #000;
+    font-size: .9rem;
+    cursor: pointer;
+    /* top: 2rem; */
+    margin: -.1rem;
+}
+h2 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 2rem;
+    color: #311414;
+    text-transform: capitalize;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr, th {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    font-size: 1.3rem;
+}
+td {
+    border: 1px solid black;
+    width: 60px;
+    height: 50px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/* ukuran dilayar tablet */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+        gap: 8px;
+    }
+
+    input, button {
+        width: 100%;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+}
+/* ukuran dilayar ponsel */
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    input, button {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
